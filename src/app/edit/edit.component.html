@@ -1,0 +1,22 @@
+<section>
+  <h1>Use the form below to update your profile.</h1>
+<div>
+  <p>Name: {{ userProfile.name }}</p>
+  <p>Contact Info: {{ userProfile.contactinfo }}</p>
+  <p>Bio: {{ userProfile.bio }}</p>
+</div>
+
+<form #editForm="ngForm" (ngSubmit)="saveProfile(userProfile)">
+<label for="name">Name:
+  <input type="text" name="name" [(ngModel)]="userProfile.name">
+</label>
+<label for="contact">Contact:
+  <input type="text" name="contactinfo" [(ngModel)]="userProfile.contactinfo">
+</label>
+<label for="Bio">Bio:
+  <input type="text" name="bio" [(ngModel)]="userProfile.bio" class="bio">
+</label>
+
+<button (click)="returnToProfile()">Submit</button>
+</form>
+</section>

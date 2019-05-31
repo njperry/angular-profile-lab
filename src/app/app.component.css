@@ -1,0 +1,19 @@
+.active {
+    color: cornflowerblue;
+    font-size: 30px;
+    border: 10px inset aqua;
+    border-radius: 15px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+a {
+    margin: 10px;
+    color: mediumblue;
+}
